@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado — Leis que Mais Confundem (GCM Hortolândia)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+  :root{
+    --navy:#0f1f38; --navy-2:#16294a; --paper:#eef0e9; --paper-2:#e3e6dc;
+    --gold:#b8862f; --gold-light:#d9ab55; --ink:#1b2230;
+    --green:#2f6b4f; --green-bg:#e4efe6; --red:#9c3b32; --red-bg:#f3e4e0; --line:#c9cdbd;
+  }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{
+    background: var(--paper);
+    background-image: radial-gradient(circle at 1px 1px, rgba(15,31,56,0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+    color: var(--ink); font-family: 'IBM Plex Sans', sans-serif; min-height: 100vh; padding: 0 0 80px 0;
+  }
+  header.masthead{ background: var(--navy); color: var(--paper); padding: 34px 20px 26px; border-bottom: 6px solid var(--gold); }
+  .masthead-inner{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; color: var(--gold-light); margin-bottom: 10px; }
+  h1.title{ font-family:'Source Serif 4', serif; font-weight: 800; font-size: clamp(24px, 5.5vw, 36px); line-height: 1.08; margin: 0 0 8px 0; }
+  .subtitle{ font-size: 14px; color: #c7cede; max-width: 60ch; line-height: 1.5; }
+  .stampline{ display:flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+  .stampline span{ font-family:'IBM Plex Mono', monospace; font-size: 11px; border: 1px solid rgba(216,171,85,0.5); color: var(--gold-light); padding: 4px 10px; border-radius: 2px; }
+  main{ max-width: 760px; margin: 0 auto; padding: 28px 18px 0; }
+  .disclaimer{
+    background:#fff; border:1px solid var(--line); border-left: 4px solid var(--gold);
+    border-radius: 3px; padding: 14px 16px; margin-bottom: 20px; font-size: 12.8px; line-height: 1.55; color: #33394a;
+  }
+  .disclaimer b{ color: var(--navy); }
+  .progress-wrap{ position: sticky; top: 0; z-index: 20; background: var(--paper); padding: 14px 18px 12px; margin: 0 -18px 18px; border-bottom: 1px solid var(--line); }
+  .progress-row{ display:flex; justify-content: space-between; align-items: baseline; max-width: 760px; margin: 0 auto; font-family:'IBM Plex Mono', monospace; font-size: 12px; color: var(--navy-2); margin-bottom: 8px; }
+  .progress-row b{ color: var(--navy); font-size: 13px; }
+  .bar-track{ max-width: 760px; margin: 0 auto; height: 5px; background: var(--paper-2); border-radius: 3px; overflow: hidden; border: 1px solid var(--line); }
+  .bar-fill{ height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); width: 0%; transition: width 0.35s ease; }
+  .score-pill{ font-family:'IBM Plex Mono', monospace; font-size: 11.5px; }
+  .score-pill .hit{ color: var(--green); font-weight:600; } .score-pill .miss{ color: var(--red); font-weight:600; }
+  .section-divider{ display:flex; align-items:center; gap: 14px; margin: 44px 0 20px; }
+  .section-divider:first-of-type{ margin-top: 10px; }
+  .section-divider .line{ flex:1; height:1px; background: var(--line); }
+  .section-divider span{ font-family:'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: 0.14em; font-size: 11.5px; color: var(--navy-2); white-space: nowrap; }
+  .qcard{ background: #fff; border: 1px solid var(--line); border-radius: 3px; margin-bottom: 18px; box-shadow: 0 1px 0 rgba(15,31,56,0.04); overflow: hidden; }
